@@ -1,0 +1,45 @@
+body {
+    color: white;
+    background: #2b2b2b !important;
+  }
+.bg-body-tertiary {
+    background: #121212 !important;
+}
+
+.personal-blog>a {
+    color: rgb(0, 225, 121);
+}
+
+.nav-item .nav-link {
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    margin: 12px;
+    font-family: 'Comfortaa-SemiBold';
+    color: white;
+}
+
+.active {
+    border-bottom: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.card, .card ul li {
+    color: white;
+    background-color: #252525;
+}
+
+a {
+    color: white;
+}
+
+.footer-col h4 {
+    color: white;
+}
+.footer-col ul li a {
+    color: white;
+}

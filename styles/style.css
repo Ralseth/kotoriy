@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'gilroy-Regular';
+    src: url(fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: 'Acrom';
+    src: url(fonts/Acrom.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url(fonts/Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa-SemiBold';
+    src: url(fonts/Comfortaa-SemiBold.ttf);
+}

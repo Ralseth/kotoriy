@@ -1,0 +1,381 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+    color: orange !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Anta", sans-serif;
+    margin-left: 1%;
+}
+.navbar-brand:hover {
+    color: orange;
+}
+
+.personal-blog {
+    width: 400px;
+    display: flex;
+}
+.personal-blog>a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-right: 6%;
+    padding-left: 4%;
+    padding-top: 6%;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.4s color;
+}
+.personal-blog>a:not(:hover) {
+    transition: 0.5s color;
+}
+
+.personal-blog>a>span {
+    padding-top: 12px;
+    
+}
+.personal-blog>a>i {
+    text-align: center;
+}
+.fa-solid {
+    color: rgb(0, 225, 121);
+}
+.personal-blog>a:hover {
+    color: rgb(0, 225, 121);
+}
+.fa-sign-out-alt {
+    color: orange;
+}
+
+.theme {
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-check {
+    position: absolute;
+    opacity: 0;
+    transform: scale(7.5);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sun {
+    transform: scale(0);
+    transition: 0.4s ease;
+}
+
+.theme-check:checked~.sun {
+    transition-delay: .1s;
+    transform: scale(1) rotate(360deg);
+}
+
+.moon {
+    transform: scale(1);
+    transition: 0.4s ease;
+}
+
+.theme-check:checked~.moon {
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+
+.nav-item .nav-link {
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    font-family: 'Comfortaa-SemiBold';
+}
+.nav-item .nav-link:hover {
+    color: rgb(0, 225, 121);
+    transition: all ease-in-out 0.4s;
+    transform: scale(1.1);
+}
+.nav-item .nav-link:not(:hover) {
+    transition: 0.5s;
+  }
+.form-control {
+    border: 1px solid grey;
+}
+
+
+.basket-card {
+    background: #081b29;
+  border: 2px solid rgb(0, 225, 121);
+  box-shadow: 0 0 25px rgb(0, 225, 121);
+  overflow: hidden;
+}
+.basket-header {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Acrom', sans-serif;
+    color: white;
+}
+.basket-item-container {
+    min-height: 200px;
+}
+.basket-item {
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 225, 121);
+    min-height: 100px;
+}
+
+.imgBaskCard {
+    max-height: 100px;
+    max-width: 100px;
+}
+.textForName {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0 5%;
+    color: black;
+}
+.price {
+    display: flex;
+    margin: 0 5%;
+    font-size: 24px;
+    font-family: 'gilroy-Regular', sans-serif;
+    width: 100px;
+    color: black;
+}
+.numInBask {
+    margin: 0 2%;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+.plus, .minus {
+    font-size: 28px;
+    color: black;
+}
+.basket-btn-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+.basketSumm {
+    margin: 8% 4% 5% 5%;
+    font-size: 24px;
+    font-family: 'Comfortaa-Regular';
+    color: white;
+}
+
+.btns {
+    font-family: 'Comfortaa-SemiBold';
+    border: 1px solid darkred;
+    padding: 1%;
+    border-radius: 12px;
+    transform: translateY(0);
+    opacity: 1;
+    transition: .4s ease-in-out;
+    transition-delay: calc(.1s * var(--j));
+    font-size: 18px;
+    color: white;
+    background-color: #081b29 ;
+}
+
+.btns:hover {
+    transform: translateY(-20%);
+    transition-delay: calc(.1s * var(--i));
+    background-color: rgb(0, 225, 121);
+    border: 1px solid black;
+}
+
+.card-img-top {
+    height: auto;
+    max-height: 256px;
+    width: auto;
+    max-width: 256px;
+    margin: auto;
+}
+
+.personal-btn {
+    color: white;
+}
+
+@media(max-width: 1850px) {
+    @media(min-width: 993px) {
+        .nav-item .nav-link {
+            font-size: 14px;
+            margin: 2px;
+        }
+
+    }
+    .personal-blog {
+        width: 230px;
+    }
+    .personal-blog>a {
+        font-size: 14px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+@media(max-width: 992px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+    .navbar-toggler {
+        margin-bottom: 5%;
+    }
+    .personal-blog {
+        width: 200px;
+    }
+    .personal-blog>a {
+        padding-right: 0;
+        padding-left: 12%;
+        padding-top: 0;
+    }
+    .personal-blog>a>span {
+        display: none;
+    }
+    .nav-item .nav-link {
+        font-size: 20px;
+    }
+    .theme-check {
+        transform: scale(1);
+    }
+    .modal-dialog, .modal-content, .basket-card {
+        max-width: 600px;
+        min-width: 200px; 
+    }
+    .card-img-top {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    .basket-btn-container {
+        max-width: 500px;
+    }
+    .btns {
+        max-height: 40px;
+        max-width: 120px;
+    }
+}
+@media(max-width: 592px) {
+    .basket-item {
+        justify-content: flex-start;
+    }
+    .basket-header {
+        text-align: start;
+        margin-left: 22%;
+    }
+    .modal-dialog, .modal-content, .basket-card {
+        margin: 0;
+        max-width: 400px;
+        min-width: 100px; 
+        
+    }
+    .price {
+        font-size: 20px;
+        margin: 0 2%;
+    }
+    .textForName {
+        margin: 0 0 2% 2%;
+    }
+    .imgBaskCard {
+        max-height: 50px;
+    }
+}
+
+.order-card {
+    background: #081b29;
+  border: 2px solid orange;
+  box-shadow: 0 0 25px orange;
+  overflow: hidden;
+}
+
+/* Стилизация карточек заказов */
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+    justify-content: center;
+}
+
+.order-details>.price {
+    width: 200px;
+}
+
+
+.order-item .order-details p {
+    margin: 0 0 2px 5%;
+    font-size: 16px;
+    color: #666;
+}
+
+.order-item .order-details .order-price {
+    display: flex;
+    font-size: 16px;
+    color: #333;
+    padding: 0 2%;
+    text-align: center;
+}
+
+.order-item .order-details .order-quantity {
+    font-size: 14px;
+    color: #666;
+}
+
+.no-orders {
+    color: white;
+    margin: 4%;
+    font-size: 24px;
+    font-style: italic;
+}
+@media (min-width: 968px) {
+    
+    .order-details {
+        display: flex;
+    }
+
+    .textForName {
+        min-width: 180px;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .order-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* Стили для нового класса 'order-status' */
+.order-status {
+    width: 100%; /* Занимает всю ширину контейнера */
+}
+
+.status-text {
+    /* Стили для текста статуса заказа */
+    font-size: 14px;
+    color: #666;
+    margin-left: auto; /* Отталкивание от левого края */
+}
+.please-log {
+    color: white;
+    margin: auto 0;
+
+}

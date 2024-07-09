@@ -1,0 +1,13 @@
+body {
+  color: #222;
+  background: #fff;
+}
+a {
+  color: black;
+}
+
+.active {
+  border-bottom: 1px solid black;
+  border-radius: 8px;
+}
+
